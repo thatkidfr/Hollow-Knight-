@@ -408,8 +408,9 @@
     <canvas id="unity-canvas"></canvas>
     <div id="fps-graph" style="display:none"><canvas id="fps-canvas"></canvas></div>
 
-    <!-- Save button -->
+    <!-- Save button
     <button class="savebtn" style="display:none">download</button>
+     -->
 
     <!-- Developer console -->
     <div id="dev-console">
@@ -996,7 +997,7 @@
                 await loadScript("Build/hktruffled.loader.js");
 
                 // Set canvas internal resolution and CSS size here to current slider-based resolution
-                let resVertical = 720;
+                let resVertical = 760;
                 let resWidth = Math.round(resVertical * 16 / 9);
 
                 canvasUnity.width = resWidth;
