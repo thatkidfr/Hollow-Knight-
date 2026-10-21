@@ -408,9 +408,9 @@
     <canvas id="unity-canvas"></canvas>
     <div id="fps-graph" style="display:none"><canvas id="fps-canvas"></canvas></div>
 
-    <!-- Save button
+    <!-- Save button     -->
     <button class="savebtn" style="display:none">download</button>
-     -->
+
 
     <!-- Developer console -->
     <div id="dev-console">
@@ -736,7 +736,7 @@
         saveBtn.onclick = saveIndexedDB;
 
         function updateSaveButtonVisibility() {
-            if (consoleVisible) saveBtn.style.display = 'block';
+            if (consoleVisible) saveBtn.style.display = 'none';
             else saveBtn.style.display = 'none';
         }
 
@@ -1073,7 +1073,7 @@
 
         // Resolution menu slider event handling
         function updateSliderLabel() {
-            const vertical = 720;
+            const vertical = 760;
             const width = Math.round(vertical * 16 / 9);
             sliderValue.textContent = `${vertical}p (${width} x ${vertical})`;
         }
