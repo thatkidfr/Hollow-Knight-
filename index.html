@@ -416,7 +416,7 @@
         <div id="dev-console-header">
             Developer Console
             <span id="console-settings-icon" style="cursor: pointer; margin-left: auto;">
-                <img src="icns/settings.png" alt="Settings" style="width: 1.2em; height: 1.2em; vertical-align: middle;">
+                <img src="icns/settings.png" alt="Settings" style="width: 1.2em; height: 1.2em; -align: middle;">
             </span>
         </div>
         <div id="dev-console-output"></div>
@@ -1082,7 +1082,7 @@
         });
 
         resolutionSlider.addEventListener('change', () => {
-            const vertical = 720;
+            const vertical = parseInt(prompt("enter new dimension"));
             const width = Math.round(vertical * 16 / 9);
 
             canvasUnity.width = width;
