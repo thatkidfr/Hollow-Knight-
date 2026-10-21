@@ -996,7 +996,7 @@
                 await loadScript("Build/hktruffled.loader.js");
 
                 // Set canvas internal resolution and CSS size here to current slider-based resolution
-                let resVertical = parseInt(resolutionSlider.value, 10);
+                let resVertical = 720;
                 let resWidth = Math.round(resVertical * 16 / 9);
 
                 canvasUnity.width = resWidth;
@@ -1082,7 +1082,7 @@
         });
 
         resolutionSlider.addEventListener('change', () => {
-            const vertical = parseInt(resolutionSlider.value, 10);
+            const vertical = 720;
             const width = Math.round(vertical * 16 / 9);
 
             canvasUnity.width = width;
